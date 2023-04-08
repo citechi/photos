@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    flex-flow: row;
+}
+
+.main .main-left{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 240px;
+    text-align: center;
+}
+
+.main .main-left .title{
+    width: 100%;
+    justify-content: center;
+}
+
+.main .main-left .name{
+    font-weight: bold;
+}
+
+.main .main-left .contact, .main .main-left .walk{
+    font-size: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+.main .main-left .walk .link{
+    display: flex;
+    flex-flow: column;
+}
+
+.main .main-left .walk .link a{
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+
+.main .main-right{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 900px;
+    padding-top: 90px;
+}
+
+.main-right img {
+    height: 200px;
+    width: 280px;
+    /* padding: 10px; */
+}
