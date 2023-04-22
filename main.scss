@@ -1,0 +1,101 @@
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: gray;
+    }
+}
+
+* {
+    font-family: Century;
+    color: rgb(88, 88, 88);
+}
+
+.main{
+    display: flex;
+    flex-flow: row;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    &-left{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        width: 240px;
+        text-align: left;
+        padding-left: 32px;
+        width: 150px;
+        & .name{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        & .walk{
+            font-size: 0.8em;
+            padding-top: 20px;
+            padding-bottom: 20px;  
+            & .link{
+                display: flex;
+                flex-flow: column;
+                text-align: left;
+                padding-left: 10px;
+                & a{
+                    font-size: 0.8em;
+                    text-decoration: none;
+                    padding: 2px 0;
+                }
+            }
+        }
+        & .contact{
+            font-size: 0.8em;
+            padding-top: 20px;
+            padding-bottom: 20px;  
+        }
+        & .title{
+            width: 100%;
+            justify-content: center;
+            & p{
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &-right{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 580px;
+        padding-top: 40px;
+        & .contact-email{
+            font-size: 0.6em;
+        }
+        & img {
+            height: 120px;
+            width: 180px;
+            /* padding: 10px; */
+        }
+        &-vehicle{
+            & img {
+                height: 160px;
+                width: 200px;
+                /* padding: 10px; */
+            } 
+        }
+        &-notitle{
+            display: flex;
+            flex-flow: row;
+            align-items: left;
+            & img {
+                height: 160px;
+                width: 200px;
+                /* padding: 10px; */
+            } 
+        }
+    }
+}
+
+
+
+
+
+
+
