@@ -12,6 +12,10 @@ a {
     color: rgb(88, 88, 88);
 }
 
+img{
+    cursor: pointer;
+}
+
 .main{
     display: flex;
     flex-flow: row;
@@ -65,8 +69,17 @@ a {
         flex-wrap: wrap;
         width: 580px;
         padding-top: 40px;
-        & .contact-email{
-            font-size: 0.6em;
+        &-contact{
+            display: flex;
+            flex-flow: column;
+            & .contact-email{
+                font-size: 0.7em;
+                padding: 4px;
+            }
+            & a{
+                font-size: 0.7em;  
+                padding: 4px;
+            }
         }
         & img {
             height: 120px;
@@ -84,18 +97,97 @@ a {
             display: flex;
             flex-flow: row;
             align-items: left;
-            & img {
-                height: 160px;
-                width: 200px;
-                /* padding: 10px; */
-            } 
+            & .main-right-left, .main-right-middle{
+                display: flex;
+                flex-flow: column;
+                max-height: 800px;
+                flex-flow: wrap
+                & img {
+                    width: 200px;
+                    height: 160px;
+                    /* padding: 10px; */
+                } 
+            }
+            & .main-right-right{
+                display: flex;
+                flex-flow: column;
+                & img{
+                    width: 160px;
+                    height: calc(600px / 3);
+                    padding: 0;
+                    margin: 0;
+                }
+            }
         }
     }
 }
 
 
+.meta-modal-wrapper{
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    & .modal-wrapper{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.display-on{
+    display: flex;
+}
 
 
+@media screen and (max-width: 390px) {
+    .main{
+        padding-top: 0;
+        & .main-left{
+            padding-left: 0;
+            width: 100px;
+        }
+        & .main-right{
+            width: calc( 190px * 1.2);
+            align-items: flex-start;
+            & img{
+                width: calc( 60px * 1.2);
+                height: calc( 40px * 1.2);
+            }
+            &-vehicle{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                float: left;
 
+                max-height: calc( 80px * 1.8);
+                & img{
+                    width: calc( 60px * 1.8);
+                    height: calc( 40px * 1.8);
+                }
+            }
+            &-notitle{
+                & .main-right-right{
+                    & img{
+                        height: 80px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #modal{
+        & .modal-wrapper{
+            & img{
+                max-width: 90vw;
+            }
+        }
+    }
+}
 
 

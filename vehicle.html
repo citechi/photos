@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
+    <script src="main.js"></script>
+    <title>TOMI photo</title>
 </head>
 <body>
     <div class="main">
@@ -24,11 +25,18 @@
             <a href="./contact.html" class="contact title">Contact</a>
         </div>
         <div class="main-right main-right-vehicle">
-            <img src="./imgs/a.png" alt="">
-            <img src="./imgs/b.png" alt="">
-            <img src="./imgs/c.png" alt="">
-            <img src="./imgs/a.png" alt="">
+            <img src="./imgs/a.png" alt="" onclick="openModal('a')" id="a">
+            <img src="./imgs/b.png" alt="" onclick="openModal('b')" id="b">
+            <img src="./imgs/c.png" alt="" onclick="openModal('c')" id="c">
+            <img src="./imgs/a.png" alt="" onclick="openModal('a')" id="a">
         </div>
     </div>
+
+    <div class="meta-modal-wrapper" id="modal">
+        <div class="modal-wrapper" onclick="closeModal()">
+            <img src="" alt="" id="image">
+        </div>
+    </div>
+
 </body>
 </html>
