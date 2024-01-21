@@ -1,2 +1,3 @@
-imgs/*
+# imgs/*
 vscode/settings.json
+.DS_Store
