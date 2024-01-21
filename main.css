@@ -213,6 +213,11 @@ img {
   display: flex;
 }
 
+#modal .modal-wrapper img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
 @media screen and (max-width: 390px) {
   .main {
     padding-top: 0;
@@ -252,5 +257,6 @@ img {
   }
   #modal .modal-wrapper img {
     max-width: 90vw;
+    max-height: 90vh;
   }
 }
